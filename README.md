@@ -1,14 +1,36 @@
-# Zoo-scan
-Guardianes de la Biodiversidad – Conectando Naturaleza y Tecnología para un Futuro Sostenible
+# Zoo-explorer 
+Guardianes de la Biodiversidad Conectando Naturaleza y Tecnología para un Futuro Sostenible
+Integrantes del Equipo 
+El equipo está conformado por estudiantes de 5to de Educación General Básica de la Unidad Educativa Eight Academy, año lectivo 2025–2026, bajo la mentoría de Michelle Guarderas. 
+Líder: Martina Moreno 
+Secretaria :Mia Ramos
+Diseñadora :Sofia Chiriboga 
+Expositor:Edgar Navarrete
 
-Integrantes: Líder: Martina Moreno, Secretario:Mia Ramos, Diseñador:Sofia Chiriboga y Expositor:Edgar Navarrete 
+Problema que se quiere resolver
 
-PROBLEMA QUE SE QUIERE RESOLVER: La Zoobotánica de Eight Academy, un oasis de biodiversidad, enfrenta un desafío crítico: la desconexión informacional. A pesar de su riqueza inherente, la comunidad educativa carece de mecanismos inmediatos y comprensibles para acceder a información vital sobre las especies que la componen. Esta laguna de conocimiento no solo impide una interacción significativa, sino que también compromete la capacidad de la comunidad para ejercer una Responsabilidad Social y Ambiental efectiva.
+La Zoobotánica de Eight Academy alberga más de 38 especies documentadas de animales y plantas, pero los estudiantes la visitan sin realmente conocerla. La investigación de campo confirmó que el 53.4% de los estudiantes no puede nombrar las especies que tiene frente a sí, desconoce sus roles ecológicos ni sabe cómo cuidarlas. Están presentes físicamente, pero ausentes en conocimiento.
 
-PROPUESTA DE SOLUCIÓN Y COMO FUNCIONA: Zoo-scan, una visión materializada por nuestros estudiantes, es un ecosistema digital interactivo diseñado para revolucionar la experiencia en ZoOobotánica, convirtiéndola en un laboratorio viviente para toda la comunidad educativa. Nuestra solución redefine la interacción con la biodiversidad, transformando el aprendizaje y la conservación en una experiencia inmersiva, proactiva y accesible.
+Esta brecha genera tres impactos críticos. En la Zoobotánica existe un riesgo de descuidos involuntarios por desconocimiento de las necesidades específicas de plantas y animales. En la comunidad educativa se pierden oportunidades para el aprendizaje experiencial y el desarrollo de conciencia ecológica. Y a nivel de biodiversidad, hay un daño potencial a largo plazo al no maximizar el campus como un “aula viva”.
 
-SOLUCIÓN DEL PROBLEMA:La "Guía Eco-IA" es el núcleo de Zoo-scan, funcionando como un asistente personal inteligente en cada dispositivo. Su operación es intuitiva y poderosa:1.Identificación Instantánea: Mediante la cámara del iPad o dispositivo móvil, los usuarios pueden escanear una planta o animal, o simplemente describirlo.2.Conocimiento Aumentado: La Inteligencia Artificial subyacente procesa la entrada y proporciona información detallada y contextualizada: nombre científico y común, origen, requerimientos de cuidado (ej., riego, alimentación), curiosidades y su rol ecológico.3.Misiones Gamificadas: La Guía Eco-IA genera misiones diarias y desafíos personalizados, como "documenta el crecimiento de la planta X", "observa el comportamiento del animal Y" o "contribuye al mantenimiento del área Z". Esto transforma el aprendizaje en una aventura interactiva y dirigida.
+Propuesta
 
-ODS AL QUE SE VINCULAN:La solución propuesta se centra en la creación de un ecosistema digital interactivo para el campus, transformando a los niños en "Eco-Exploradores". Este ecosistema integra un Agente de Inteligencia Artificial y la Tecnología Blockchain para fomentar el aprendizaje y la conservación.
+Zoo-Explorer transforma esa brecha en oportunidad. Es una plataforma digital interactiva que convierte cada visita a la Zoobotánica en una experiencia de exploraciónactiva, haciendo que los estudiantes pasen de ser visitantes pasivos a Eco-Exploradores comprometidos con la conservación de su entorno.
 
-TECNOLOGÍAS QUE SE USARÁN:  Zoo-scan usa ambas. La Inteligencia Artificial (IA) es como un cerebro que ayuda a la "Guía Eco-IA" a reconocer las especies y a darnos información. La tecnología Blockchain es como un libro mágico que guarda de forma segura y transparente todo lo que hacemos y aprendemos, con las "Eco-Fichas" (Eco-Tokens).
+El proyecto busca desarrollar una Guía Eco-IA con reconocimiento de especies en tiempo real, implementar misiones gamificadas adaptadas por edad y nivel de habilidad, crear una Bitácora de Descubrimientos respaldada en Blockchain para garantizar la trazabilidad de los logros, construir una interfaz intuitiva y accesible para múltiples dispositivos, y ejecutar un piloto en Eight Academy para validar el impacto pedagógico y ambiental.
+
+Solución ODA (Observar – Descubrir – Actuar) 
+Zoo-Explorer se estructura en tres pilares que guían la experiencia del Eco-Explorador. Guía Eco-IA es el cerebro del proyecto. Los usuarios escanean plantas o animales con la cámara del iPad o móvil, o los describen verbalmente. La IA analiza la entrada y entrega el nombre científico y común de la especie, datos curiosos, su rol ecológico, requisitos vitales como agua y alimento, y misiones personalizadas según el progreso del usuario.
+
+Bitácora de Descubrimientos es lo que perdura. Cada contribución se registra como un Eco-Token único e inalterable en la blockchain, garantizando el reconocimiento transparente del esfuerzo individual y colectivo. Los usuarios acumulan insignias digitales, suben de nivel como exploradores y desbloquean acceso a áreas exclusivas de la Zoobotánica.
+
+Misiones Gamificadas son la acción. Los desafíos se adaptan a las estaciones y al progreso del usuario e incluyen actividades como adoptar una especie para monitorear su crecimiento, observar patrones de comportamiento animal o contribuir al mantenimiento del área junto a un equipo de Eco-Exploradores.
+
+Tecnología utilizada 
+Zoo-Explorer se construye sobre un stack MERN con arquitectura Progressive Web App (PWA). El frontend usa React.js con Tailwind CSS para una interfaz responsiva e interactiva. El backend corre en Node.js con Express.js para gestionar las APIs RESTful y la conexión con servicios externos. La base de datos es MongoDB, que permite almacenar de forma flexible los perfiles de usuario, especies y misiones. La infraestructura se despliega en AWS usando S3 y EC2 o Lambda para garantizar alta disponibilidad y escalabilidad.
+
+Para la Inteligencia Artificial, la identificación de plantas se realiza con la Pl@ntNet API, el reconocimiento de fauna con Google Cloud Vision API, la generación de contenido educativo con OpenAI GPT-4o, y el procesamiento de lenguaje natural con NLTK y spaCy en Python.
+
+El ecosistema Blockchain opera sobre la red Polygon (Layer 2), elegida por sus bajas tarifas y su modelo sostenible de Proof of Stake. Los tokens siguen el estándar ERC1155, que permite tanto tokens fungibles (Eco-Tokens) como no fungibles (insignias y certificados de logro). Los contratos inteligentes están escritos en Solidity e incluyen EcoToken.sol, AchievementNFT.sol y MissionManager.sol. La integración entre el backend y la blockchain se hace con Web3.js y Ethers.js, y los metadatos de los NFTs se almacenan de forma descentralizada en IPFS
+
+ Impacto y Escalabilidad Zoo-Explorer inicia como piloto en Eight Academy con proyección a otras instituciones en Quito y Ecuador, especialmente aquellas con granjas pedagógicas, huertos y jardines botánicos. El objetivo final es construir el mapa de especies escolares más grande de Ecuador, conectando instituciones en una red de conocimiento ambiental colaborativo.
