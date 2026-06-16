@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zoo Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Zoo Explorer inicio">
+        <span class="brand-mark">ZE</span>
+        <span>Zoo Explorer</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#especies">Especies</a>
+        <a href="#misiones">Misiones</a>
+        <a href="#bitacora">Bitacora</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Observar, descubrir y actuar</p>
+          <h1>Zoo Explorer</h1>
+          <p class="hero-text">
+            Una guia digital para explorar la Zoobotanica de Eight Academy,
+            reconocer especies y registrar descubrimientos durante cada visita.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#bitacora">Registrar observacion</a>
+            <a class="button secondary" href="#especies">Ver especies</a>
+          </div>
+        </div>
+
+        <div class="campus-map" aria-label="Mapa visual de la Zoobotanica">
+          <svg viewBox="0 0 520 360" role="img" aria-labelledby="map-title">
+            <title id="map-title">Zonas de exploracion de Zoo Explorer</title>
+            <rect width="520" height="360" rx="18" fill="#e8f4df"></rect>
+            <path d="M42 282 C128 214 182 286 258 222 C333 159 384 214 478 114" fill="none" stroke="#7aa95c" stroke-width="22" stroke-linecap="round"></path>
+            <path d="M70 84 C150 46 236 75 306 50 C385 22 430 42 474 82" fill="none" stroke="#b7d7a4" stroke-width="26" stroke-linecap="round"></path>
+            <circle cx="145" cy="147" r="50" fill="#f4c95d"></circle>
+            <circle cx="145" cy="147" r="26" fill="#f7df8b"></circle>
+            <g fill="#2f6f4e">
+              <ellipse cx="296" cy="154" rx="54" ry="24" transform="rotate(-24 296 154)"></ellipse>
+              <ellipse cx="342" cy="128" rx="44" ry="20" transform="rotate(22 342 128)"></ellipse>
+              <ellipse cx="365" cy="205" rx="58" ry="25" transform="rotate(-5 365 205)"></ellipse>
+            </g>
+            <g fill="#ffffff" stroke="#315f48" stroke-width="4">
+              <circle cx="105" cy="252" r="20"></circle>
+              <circle cx="278" cy="221" r="20"></circle>
+              <circle cx="422" cy="120" r="20"></circle>
+            </g>
+            <g fill="#315f48" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+              <text x="105" y="258">1</text>
+              <text x="278" y="227">2</text>
+              <text x="422" y="126">3</text>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section" id="especies">
+        <div class="section-heading">
+          <p class="eyebrow">Guia inicial</p>
+          <h2>Especies para explorar</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar especies">
+          <button class="chip active" type="button" data-filter="todas">Todas</button>
+          <button class="chip" type="button" data-filter="planta">Plantas</button>
+          <button class="chip" type="button" data-filter="animal">Animales</button>
+        </div>
+        <div class="species-grid" id="speciesGrid"></div>
+      </section>
+
+      <section class="section band" id="misiones">
+        <div class="section-heading">
+          <p class="eyebrow">Acciones ODA</p>
+          <h2>Misiones de exploracion</h2>
+        </div>
+        <div class="mission-list" id="missionList"></div>
+      </section>
+
+      <section class="section two-column" id="bitacora">
+        <div>
+          <p class="eyebrow">Bitacora</p>
+          <h2>Registrar descubrimiento</h2>
+          <form class="log-form" id="observationForm">
+            <label>
+              Nombre del explorador
+              <input name="explorer" type="text" placeholder="Ej. Martina" required>
+            </label>
+            <label>
+              Especie observada
+              <select name="species" required></select>
+            </label>
+            <label>
+              Nota de campo
+              <textarea name="note" rows="4" placeholder="Describe que viste, donde estaba y como puedes cuidarla." required></textarea>
+            </label>
+            <button class="button primary" type="submit">Guardar observacion</button>
+          </form>
+        </div>
+        <aside class="log-panel" aria-live="polite">
+          <div class="panel-heading">
+            <h3>Ultimos registros</h3>
+            <button class="text-button" type="button" id="clearLog">Limpiar</button>
+          </div>
+          <div class="log-list" id="logList"></div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Eight Academy</span>
+      <span>Guardianes de la biodiversidad</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
